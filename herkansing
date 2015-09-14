@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Formulierpagina Front End Development</title>
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+        <main>
+           <article>
+            <h1> Aanmelden </h1>
+                <p> Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten                         voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+                <p> <em> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam. </em> </p>
+                <p> Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+                    Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+                    Voor vragen of opmerkingen kunt u <a href="contact.html"> contact opnemen met ons </a> </p>
+            </article>
+
+                <form>
+                    <fieldset>
+                        <legend> Contactgegevens </legend>
+                        <ul>
+                            <li>
+                                <label for="name">Naam</label>
+                                <input type="text" id="name" placeholder="Voornaam en achternaam" required />
+                            </li>
+                            <li>
+                                <label for="company">Bedrijf</label>
+                                <input type="text" id="company" placeholder="Bedrijf" required />
+                            </li>
+                            <li>
+                                <label for="address">Adres</label>
+                                <input type="text" id="address" placeholder="Straatnaam + Huisnummer" required />
+                            </li>
+                            <li>
+                                <label for="postalcode">Postcode</label>
+                                <input type="text" id="postalcode" maxlength="6" placeholder="Postcode" required />
+                            </li>
+                            <li>
+                                <label for="hometown">Woonplaats</label>
+                                <input type="text" id="hometown" placeholder="Woonplaats" required />
+                            </li>
+                            <li>
+                                <label for="phonenumber">Telefoonnummer</label>
+                                <input type="text" id="phonenumber" maxlength="12" placeholder="Telefoonnummer" required />
+                            </li>
+                            <li>
+                                <label for="emailaddress">E-mailadres</label>
+                                <input type="email" id="emailaddress" placeholder="Emailadres" required />
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ik wil mij aanmelden:</legend>
+                        <input id="projecten" type="radio" name="aanmelden" checked/>
+                        <label for="projecten">Voor een project</label>
+
+                        <input id="stagelopen" name="aanmelden" type="radio"/>
+                        <label for="stagelopen">Voor een stagebedrijf</label>
+                    </fieldset>
+                </form>
+
+                <fieldset>
+                    <legend>Aanmelden voor Project of Stage</legend>
+                    <section>
+                        <h2>Project</h2>
+
+                        <p>
+                            <label for="title">Titel</label>
+                            <input type="text" id="title" placeholder="Projectnaam" required /> <br>
+                            <label for="assignment">Opdrachtomschrijving</label>
+                            <input type="text" id="assignment" placeholder="Opdrachtomschrijving" required /> <br>
+                            <label for="targetgroup">Doelgroepomschrijving</label>
+                            <input type="text" id="targetgroup" placeholder="Doelgroepomschrijving" required /> <br>
+                            <label for="projectgoal">Doelstelling van het project</label>
+                            <input type="text" id="projectgoal" placeholder="Doelstelling van het project" required /> <br>
+                            <label for="runtime">Duur van het project</label>
+                            <input type="text" id="runtime" placeholder="Looptijd van het project" required /> <br>
+                            <label for="deadline">Deadline van het project</label>
+                            <input type="text" id="deadline" placeholder="Deadline van project" required />
+                        </p>
+
+
+
+                        <p>Geschikt voor:
+                            <select id="geschiktvoor">
+                                <option value="first">Eerstejaars studenten</option>
+                                <option value="second">Tweedejaars studenten</option>
+                                <option value="third">Derdejaars studenten</option>
+                                <option value="fourth">Afstuderende studenten</option>
+                                <option value="unknown">Onbekend</option>
+                            </select>
+                        </p>
+
+
+                        <p><label for="remarks">Opmerkingen</label>
+                            <input type="text" id="remarks" placeholder="Heeft u nog opmerkingen?" >
+                        </p>
+
+                        <label for="begind">Begin datum</label>
+                        <input type="date" id="begind">
+
+                        <p> <label for="works">Beschrijving Werkzaamheden</label>
+                            <input type="text" id="works" placeholder="Beschrijving Werkzaamheden">
+                        </p>
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <section>
+                        <h2>Stage</h2>
+
+                        <p>Geschikt voor:
+                            <select id="geschiktheid">
+                                <option value="second">Tweedejaars studenten</option>
+                                <option value="fourth">Afstuderende studenten</option>
+                                <option value="unknown">Onbekend</option>
+                            </select>
+                        </p>
+
+                        <p>Hoe lang is de stage?
+                            <select id="stageduur">
+                                <option value="10weeks">10 weken</option>
+                                <option value="20weeks">20 weken</option>
+                            </select>
+                        </p>
+
+                        <p>Beschrijving stagebedrijf <br>
+                            <label for="company2">Bedrijfsnaam</label>
+                            <input type="text" id="company2" placeholder="Naam bedrijf"> <br>
+
+                            <label for="address2">Adres</label>
+                            <input type="text" id="address2" placeholder="Adres"> <br>
+
+                            <label for="postalcode2">Postcode</label>
+                            <input type="text" id="postalcode2" placeholder="Postcode"> <br>
+
+                            <label for="location2">Plaats</label>
+                            <input type="text" id="location2" placeholder="Plaats"> <br>
+
+                            <label for="sector">Sector</label>
+                            <input type="text" id="sector" placeholder="Sector"> <br>
+
+                            <label for="corebusiness">Core Business</label>
+                            <input type="text" id="corebusiness" placeholder="Core Business"> <br>
+                        </p>
+
+                        <p>
+                            <label for="remarks2">Opmerkingen</label>
+                            <input type="text" id="remarks2" placeholder="Heeft u nog opmerkingen?">
+                        </p>
+                    </section>
+
+                </fieldset>
+        </main>
+    </body>
+</html>
